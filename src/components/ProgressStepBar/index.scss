@@ -1,0 +1,72 @@
+@import "../../variables.scss";
+
+.container {
+    width: 100%;
+    padding: 20px 30px;
+    position: relative;
+  }
+  
+  .progressbar li {
+    list-style: none;
+    display: block;
+    padding: 5px 0px;
+    position: relative;
+    color: $light-gray;
+  }
+
+  .progressbar li.active {
+    color: $gray;
+    span {
+      color: $light-blue;
+    }
+  }
+
+  .progressbar li.active span.pending {
+    color: $pink;
+  }
+
+  .progressbar li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 3px solid $light-gray;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+    background-color: $white;
+    z-index : 2;
+  }
+
+  .progressbar li.active:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid $light-blue;
+    background-color: $white;
+    top: 10px;
+    left: 0;
+    z-index : 2;
+  }
+
+  .progress-bar-step-wrapper{
+    width: 100px;
+    height: 4px;
+    background: $light-gray;
+    border-radius: 20px;
+    margin: auto 0;
+    margin-left: -15px;
+    top: 44%;
+    left: 0;
+    position: absolute;
+    transform:rotate(90deg);
+    z-index: 0;
+}
+
+.progress-bar-step {
+    background-color: $light-blue;
+    height: 4px;
+    border-radius: 20px;
+}

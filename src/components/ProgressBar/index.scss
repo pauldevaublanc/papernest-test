@@ -1,0 +1,42 @@
+@import "../../variables.scss";
+
+.progress-bar-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.progress-bar-wrapper {
+    width: 100px;
+    height: 10px;
+    background: $light-gray;
+    border-radius: 20px;
+    transform: rotate(-90deg);
+    margin: auto 0;
+    margin-left: -15px;
+}
+
+.progress-bar {
+    background-color: $light-blue;
+    height: 10px;
+    border-radius: 20px;
+}
+
+.progress-bar-text {
+    margin-left: -15px;
+    h3 {
+        color: $dark-blue;
+        font-size: 22px;
+        line-height: 26px;
+        padding-bottom: 8px;
+        font-weight: 500;
+        margin: 0;
+    }
+    p {
+        color: $gray;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+    }
+}

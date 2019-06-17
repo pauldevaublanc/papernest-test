@@ -1,0 +1,67 @@
+@import "../../variables.scss";
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 16px;
+    line-height: 32px;
+    color: $white;
+    border-bottom: 1px solid $blue;
+    padding: 20px 30px;
+}
+
+.navbar-navigation, .navbar-personal-infos {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    p {
+        padding: 0px 30px;
+        margin: auto;
+        border-left: 1px solid $blue;
+        span {
+            padding-bottom: 8px;
+            border-bottom: 1px solid $white; 
+        }
+        &:first-of-type {
+            border-left: none;
+        }
+    }
+}
+
+.icon-down {
+    margin-left: 15px;
+    vertical-align: middle;
+    color: $light-blue;
+}
+
+.icon-bell {
+    position: relative;
+    &:after {
+        content: attr(content);
+        display: flex;
+        font-size: 12px;
+        line-height: 20px;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: $pink;
+        border-radius: 50%;
+        top: -5px;
+        left: 50%;
+    }
+}
+
+
+// ANT DESIGN 
+.ant-dropdown-link {
+    color: $white;
+    margin: auto;
+    padding: 0 30px;
+    border-left: 1px solid $blue;
+    &:hover {
+        color: $light-blue;
+    }
+}

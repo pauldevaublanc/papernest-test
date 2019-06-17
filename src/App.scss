@@ -1,0 +1,60 @@
+@import "./variables.scss";
+
+.app {
+  background-color: $light-gray;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.page-header {
+  background-color: $dark-blue;
+}
+
+.user-actions-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: $light-blue;
+    span {
+      font-size: 20px;
+    }
+  }
+}
+
+.ant-progress-circle  path:first-child {
+  stroke: $blue !important;
+}
+
+.user-summary {
+  display: flex;
+  align-items: center;
+}
+
+.user-summary-text {
+  padding-left: 30px;
+}
+
+.actions-wrapper {
+  display: flex; 
+}
+
+
+.contracts-wrapper {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+
+
